@@ -1,3 +1,11 @@
-const items = document.querySelectorAll('.item')
-console.log(`В списке ${items.length} категории`);
-items.forEach(item => console.log(`Категория:${item.firstElementChild.textContent} Количество элементов: ${item.lastElementChild.querySelectorAll('li').length}`));
+///////// #1 ///////
+
+const itemsRef = document.querySelectorAll('.item')
+const countCategories = ref => console.log(`В списке ${itemsRef.length} категории`);
+const countItems = ref => {
+    itemsRef.forEach(item => console.log(`Категория:${item.querySelector('h2').textContent} Количество элементов: ${item.querySelector('ul').children.length}`));
+}
+countCategories(itemsRef);
+countItems(itemsRef);
+
+////////// #2 //////////////
