@@ -8,4 +8,4 @@ const countItems = ref => {
 countCategories(itemsRef);
 countItems(itemsRef);
 
-////////// #2 //////////////
+
