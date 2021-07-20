@@ -15,7 +15,7 @@ const images = [
 const ulRef = document.querySelector('#gallery');
 const createGallery = arr => {
   const gallery = arr.map(item => {
-    `<li class='gallery-item'><img src='${item.url}' alt='${item.alt}' width='450'></li>`).join('');
+    `<li class='gallery-item'><img src='${item.url}' alt='${item.alt}' width='450'></li>`.join('');
   });
   return gallery;
 }
