@@ -19,5 +19,5 @@ const createGallery = arr => {
   });
   return gallery;
 }
- ulRef.insertAdjacentHTML('beforeend', createGallery(images););
+ ulRef.insertAdjacentHTML('beforeend', createGallery(images));
 
