@@ -2,9 +2,9 @@ const inputRef = document.querySelector('#name-input');
 const outputRef = document.querySelector('#name-output');
 inputRef.addEventListener('input', onInputChange);
 
-function onInputChange() {
+function onInputChange(event) {
 
-    outputRef.textContent = inputRef.value;
+    outputRef.textContent = event.currentTarget.value;
     if (!outputRef.textContent) {
         outputRef.textContent = 'незнакомец'
 
